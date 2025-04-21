@@ -4,15 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",  
-    "build": "vite build", 
-    "lint": "eslint .",  
-    "preview": "vite preview",  
-    "predeploy": "npm run build",  
-    "deploy": "gh-pages -d dist",  
-    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",  
-    "start-backend": "cd server && node index.js --silent",  
-    "start-frontend": "cd frontend && npm start --silent"  
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd server && node index.js --silent",
+    "start-frontend": "cd frontend && npm start --silent"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
