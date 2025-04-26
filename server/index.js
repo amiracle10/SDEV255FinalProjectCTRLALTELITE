@@ -20,10 +20,10 @@ mongoose.connect('mongodb+srv://FPAdmin:Y8imOPz5a0wHIwBQ@fpcluster1.5h639vi.mong
 
 // Course model
 const Course = mongoose.model('Course', new mongoose.Schema({
-  name: String,
-  subject: String,
-  credits: Number,
-  description: String,
+  name: { type: String, required: true},
+  subject: { type: String, required: true},
+  credits: { type: Number, required: true},
+  description: { type: String, required: true},
 }));
 
 // Routes
